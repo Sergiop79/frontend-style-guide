@@ -53,7 +53,7 @@ $link-focus-color: darken($link-visited-color, 10);
 
 $max-width          : 60em; /* 960px / 16px */
 $gutter-width       : 24px;
-$radius             : 2px;
+$radius             : 4px;
 $hover-transition   : .3s;
 $animation-time     : .8s;
 
@@ -61,4 +61,4 @@ $animation-time     : .8s;
 
 $bp-small: 48em; // 768px / 16px;
 $bp-medium: 62em; // 992px / 16px;
-$bp-large: 48em; // 1200px / 16px;
+$bp-large: 75em; // 1200px / 16px;
