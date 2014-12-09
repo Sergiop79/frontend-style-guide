@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
+var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 var lr = require('tiny-lr');
 var livereload = require('gulp-livereload');
@@ -20,13 +21,33 @@ gulp.task('styles', function () {
       browsers: ['last 2 versions']
     }))
     .pipe(minifyCSS())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest('./css'))
     .pipe(livereload({
       auto: false
     }));
 });
 
+// Compile Handlebars templates
+gulp.task('templates', function () {
+  var templateData = {
+    title: 'Frontend Styleguide'
+  };
+
+  var options = {
+    batch: ['./templates/partials']
+  };
+
+  return gulp.src('templates/index.handlebars')
+    .pipe(handlebars(templateData, options))
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest('.'))
+    .pipe(livereload({
+      auto: false
+    }));
+});
 
 
 
@@ -62,6 +83,7 @@ gulp.task('watch', function () {
   livereload.listen();
   gulp.watch(['./scss/**/*.scss'], ['styles']);
   gulp.watch(['./index.html'], ['html']);
+  gulp.watch(['./templates/**/*.handlebars'], ['templates']);
 });
 
-gulp.task('default', ['watch', 'styles', 'html', 'server']);
+gulp.task('default', ['watch', 'styles', 'templates', 'html', 'server']);
