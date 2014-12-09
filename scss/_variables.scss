@@ -1,0 +1,64 @@
+// Colors *****************************************************
+
+// Grey scale
+
+$black              : rgb(0, 0, 0);
+$superdark  	    : lighten($black, 10%);
+$darkergrey 	    : lighten($black, 15%);
+$darkgrey 		    : lighten($black, 25%);
+$grey 			    : lighten($black, 50%);
+$lightgrey 		    : lighten($black, 75%);
+$lightergrey 	    : lighten($black, 90%);
+$superlightergrey   : lighten($black, 95%);
+$white 			    : rgb(255,255,255);
+
+// Brand colors
+$brand-color       : rgb(44, 100, 185);
+$base-color        : $brand-color;
+$base-color-light  : lighten($base-color, 10);
+$secondary-color   : rgb(241, 108, 61);
+$border-color      : $lightergrey;
+
+// Web
+$background-color   : $white;
+$text-color         : $darkergrey;
+$text-color-strong  : $black;
+
+// Typography *************************************************
+
+$fonts-dir             : "../fonts";
+//$base-font             : "Helvetica neue", Helvetica, Arial, sans-serif;
+$base-font             : "open_sansregular", Helvetica, Arial, sans-serif;
+$alt-font              : Georgia, Times, "Times New Roman";
+$code-font             : "Courier New", monospace;
+$code-color            : #c7254e;
+$heading-font          : inherit;
+$heading-font-weight   : bold;
+$heading-font-color    : inherit;
+
+$baseline-height       : 1.5em;
+$baseline              : $baseline-height;
+$base-font-size        : 16;
+
+
+// Links ******************************************************
+
+$link-color: $base-color;
+$link-hover-color: darken($link-color, 10);
+$link-visited-color: $link-color;
+$link-focus-color: darken($link-visited-color, 10);
+
+
+// Layout *****************************************************
+
+$max-width          : 60em; /* 960px / 16px */
+$gutter-width       : 24px;
+$radius             : 2px;
+$hover-transition   : .3s;
+$animation-time     : .8s;
+
+// Breakpoints ************************************************
+
+$bp-small: 48em; // 768px / 16px;
+$bp-medium: 62em; // 992px / 16px;
+$bp-large: 48em; // 1200px / 16px;

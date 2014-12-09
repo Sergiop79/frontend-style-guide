@@ -1,0 +1,23 @@
+html {
+  background: $background-color;
+  font-size: 85%;
+}
+
+@media screen and (min-width: $bp-medium) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  font-family: $base-font;
+  @include font-size();
+  line-height: $baseline-height;
+  color: $text-color;
+}
+
+// From here you can write the layout styles. Enjoi it!!
