@@ -56,9 +56,27 @@ $gutter-width       : 24px;
 $radius             : 4px;
 $hover-transition   : .3s;
 $animation-time     : .8s;
+$padding-vertical   : 6px;
+$padding-horizontal : 12px;
 
 // Breakpoints ************************************************
 
 $bp-small: 48em; // 768px / 16px;
 $bp-medium: 62em; // 992px / 16px;
 $bp-large: 75em; // 1200px / 16px;
+
+// Textures ***************************************************
+
+// Colors of different states warning, success, info ...
+
+$success-color: #5cb85c;
+$info-color:  #5bc0de;
+$warning-color: #f0ad4e;
+$danger-color: #d9534f;
+
+// Forms ******************************************************
+$input-bg: #fff;
+$input-focus-shadow: 0 0 6px rgba($brand-color, .3);
+$input-border-color: #ccc;
+$input-focus-border-color: lighten($brand-color, 20%);
+$input-padding: 6px 12px;

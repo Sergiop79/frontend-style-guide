@@ -1,35 +1,98 @@
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  @include font-size();
+  font-family: $base-font;
+  margin: 0;
+  padding: 0;
+}
+
 legend, label {
   width: auto;
   color: $text-color-strong;
   font-weight: 700;
   display: block;
-  line-height: 3;
+  line-height: $baseline * 2;
 }
 
 abbr[title="Required"] {
   color: $code-color;
+  border-bottom: none;
 }
 
-input + .caption {
+input + .caption,
+select + .caption,
+div + .caption {
   display: block;
   color: $grey;
+  line-height: $baseline * 2;
 }
 
-input[type=text],
-input[type=url],
-input[type=tek],
-input[type=number],
-input[type=color],
-input[type=email] {
-  padding: 10px;
-  border-radius: $radius;
-  border: solid 1px $lightgrey;
-  outline: 0;
+%input {
   width: 100%;
-  background-color: $superlightergrey;
+  padding: $input-padding;
+  background-color: $input-bg;
+  border: solid 1px $input-border-color;
+  border-radius: $radius;
+  outline: none;
+  vertical-align: middle;
+  transition: all $hover-transition ease;
 
   &:focus {
     background-color: $white;
+    box-shadow: $input-focus-shadow;
+    border: solid 1px $input-focus-border-color;
   }
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="email"] {
+  @extend %input;
+}
+
+select {
+  @extend %input;
+  -webkit-appearance: none;
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBvbHlnb24gcG9pbnRzPSI4LDAgMyw2IDEzLDYiIGZpbGw9IiM0NDQiLz48cG9seWdvbiBwb2ludHM9IjgsMCAzLDYgMTMsNiIgZmlsbD0iIzQ0NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYsIDE1KSByb3RhdGUoLTE4MCkiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+}
+
+.select {
+  width: 220px;
+  position: relative;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin:0 6px 0 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -12px;
+  *overflow: hidden;
+}
+
+@media screen and (min-width: $bp-medium) {
+  .checkbox {
+    top: -16px;
+  }
+}
+
+.checkbox-label {
+  color: $text-color;
+  font-weight: 300;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
 }
 

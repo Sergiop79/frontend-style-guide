@@ -1,27 +1,70 @@
 <form action="">
   <fieldset>
-   <legend>Personal information</legend>
+    <legend>Legend Personal information</legend>
     <p>
-      <label for="name">Name <abbr title="Required">*</abbr></label>
-      <input type="text" id="name">
+      <label for="name">Name <abbr title="Required">*</abbr>
+        <input type="text" id="name">
+        <small class="caption">Note about this field</small>
+      </label>
+    </p>
+
+    <p>
+      <label for="email">Email <abbr title="Required">*</abbr>
+        <input type="email" id="email">
+        <small class="caption">Note about this field</small>
+      </label>
+    </p>
+
+    <p>
+      <label for="password">Password <abbr title="Required">*</abbr>
+        <input type="password" id="password">
+        <small class="caption">Note about this field</small>
+      </label>
+    </p>
+
+    <p>
+      <label for="homepage">Homepage <abbr title="Required">*</abbr>
+        <input type="url" id="homepage">
+        <small class="caption">Note about this field</small>
+      </label>
+    </p>
+
+    <p>
+      <label for="color">Favorite color <abbr title="Required">*</abbr>
+        <input type="color" id="color">
+        <small class="caption">Note about this field</small>
+      </label>
+    </p>
+
+    <p>
+      <label for="phone">Phone Number <abbr title="Required">*</abbr>
+      </label>
+      <input type="tel" id="phone">
       <small class="caption">Note about this field</small>
     </p>
 
     <p>
-      <label for="email">Email <abbr title="Required">*</abbr></label>
-      <input type="email" id="email">
-      <small class="caption">Note about this field</small>
+      <label for="select">Select <abbr title="Required">*</abbr>
+      </label>
+      <select name="select" id="select" class="select">
+        <optgroup label="Option Group"></optgroup>
+        <option value="option1">Option 1</option>
+        <option value="option2" selected>Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      <small class="caption">Note about this selection</small>
     </p>
 
-    <p>
-      <label for="homepage">Homepage <abbr title="Required">*</abbr></label>
-      <input type="url" id="homepage">
-      <small class="caption">Note about this field</small>
-    </p>
-
-    <p>
-      <label for="color">Favorite color <abbr title="Required">*</abbr></label>
-    </p>
+    <fieldset>
+      <label>Checkboxes <abbr title="Required">*</abbr>
+      </label>
+      <label class="checkbox-label" for="check1">
+        <input type="checkbox" class="checkbox" id="check1">Checkbox 1</label>
+      <label class="checkbox-label" for="check2">
+        <input type="checkbox" class="checkbox" id="check2" checked>Checkbox 2</label>
+      <label class="checkbox-label" for="check3">
+        <input type="checkbox" class="checkbox" id="check3">Checkbox 3</label>
+    </fieldset>
 
   </fieldset>
 
