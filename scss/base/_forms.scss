@@ -44,6 +44,9 @@
   background-position: 92% 50%;
   width: 220px;
   position: relative;
+  -moz-appearance: none; // Remove dropdown arrow on firefox
+  text-indent: 0.01px;
+  text-overflow: '';
 }
 
 
