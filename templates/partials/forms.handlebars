@@ -1,52 +1,52 @@
 <form action="">
   <fieldset>
-    <legend>Legend Personal information</legend>
+    <legend class="legend">Legend Personal information</legend>
     <p>
-      <label for="name">Name <abbr title="Required">*</abbr>
-        <input type="text" id="name">
+      <label for="name" class="label">Name <abbr title="Required" class="label__asterisk">*</abbr>
+        <input type="text" id="name" class="text-input">
         <small class="caption">Note about this field</small>
       </label>
     </p>
 
     <p>
-      <label for="email">Email <abbr title="Required">*</abbr>
-        <input type="email" id="email">
+      <label for="email" class="label">Email <abbr title="Required" class="label__asterisk">*</abbr>
+        <input type="email" id="email" class="text-input">
         <small class="caption">Note about this field</small>
       </label>
     </p>
 
     <p>
-      <label for="password">Password <abbr title="Required">*</abbr>
-        <input type="password" id="password">
+      <label for="password" class="label">Password <abbr title="Required" class="label__asterisk">*</abbr>
+        <input type="password" id="password" class="text-input">
         <small class="caption">Note about this field</small>
       </label>
     </p>
 
     <p>
-      <label for="homepage">Homepage <abbr title="Required">*</abbr>
-        <input type="url" id="homepage">
+      <label for="homepage" class="label">Homepage <abbr title="Required" class="label__asterisk">*</abbr>
+        <input type="url" id="homepage" class="text-input">
         <small class="caption">Note about this field</small>
       </label>
     </p>
 
     <p>
-      <label for="color">Favorite color <abbr title="Required">*</abbr>
-        <input type="color" id="color">
-        <small class="caption">Note about this field</small>
+      <label for="phone" class="label">Phone Number <abbr title="Required" class="label__asterisk">*</abbr>
       </label>
-    </p>
-
-    <p>
-      <label for="phone">Phone Number <abbr title="Required">*</abbr>
-      </label>
-      <input type="tel" id="phone">
+      <input type="tel" id="phone" class="text-input">
       <small class="caption">Note about this field</small>
     </p>
 
     <p>
-      <label for="select">Select <abbr title="Required">*</abbr>
+      <label for="homepage" class="label">Homepage <abbr title="Required" class="label__asterisk">*</abbr>
+        <input type="url" id="homepage" class="text-input">
+        <small class="caption">Note about this field</small>
       </label>
-      <select name="select" id="select" class="select">
+    </p>
+
+    <p>
+      <label for="select" class="label">Select <abbr title="Required" class="label__asterisk">*</abbr>
+      </label>
+      <select name="select" id="select" class="select-input">
         <optgroup label="Option Group"></optgroup>
         <option value="option1">Option 1</option>
         <option value="option2" selected>Option 2</option>
@@ -55,16 +55,64 @@
       <small class="caption">Note about this selection</small>
     </p>
 
-    <fieldset>
-      <label>Checkboxes <abbr title="Required">*</abbr>
-      </label>
-      <label class="checkbox-label" for="check1">
-        <input type="checkbox" class="checkbox" id="check1">Checkbox 1</label>
-      <label class="checkbox-label" for="check2">
-        <input type="checkbox" class="checkbox" id="check2" checked>Checkbox 2</label>
-      <label class="checkbox-label" for="check3">
-        <input type="checkbox" class="checkbox" id="check3">Checkbox 3</label>
+    <fieldset class="options-list">
+      <legend class="label">Check list <abbr title="Required" class="label__asterisk">*</abbr></legend>
+
+      <div class="option">
+        <input type="checkbox" id="check1" class="option__input" checked>
+        <label for="check1" class="option__label">Check 1</label>
+      </div>
+
+      <div class="option">
+        <input type="checkbox" id="check2" class="option__input">
+        <label for="check2" class="option__label">Check 2</label>
+      </div>
+
+      <div class="option">
+        <input type="checkbox" id="check3" class="option__input">
+        <label for="check3" class="option__label">Check 3</label>
+      </div>
+      <small class="caption">Note about these options</small>
     </fieldset>
+
+    <fieldset class="options-list">
+      <legend class="label">Radio list <abbr title="Required" class="label__asterisk">*</abbr></legend>
+
+      <div class="option">
+        <input type="radio" id="radio1" class="option__input" name="radio-list" value="option1" checked>
+        <label for="radio1" class="option__label">Option 1</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" id="radio2" class="option__input" name="radio-list" value="option2">
+        <label for="radio2" class="option__label">Option 2</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" id="radio3" class="option__input" name="radio-list" value="option3">
+        <label for="radio3" class="option__label">Option 3</label>
+      </div>
+
+      <small class="caption">Note about these options</small>
+    </fieldset>
+
+    <p>
+      <label for="textarea" class="label">Textarea <abbr title="Required" class="label__asterisk">*</abbr></label>
+      <textarea name="textarea" id="textarea" class="text-input" cols="30" rows="10"></textarea>
+      <small class="caption">Note about this field</small>
+    </p>
+
+    <p class="option">
+      <input type="checkbox" id="single-check" class="option__input" checked>
+      <label for="single-check" class="option__label">Single checkbox</label>
+      <small class="caption">Note about this field</small>
+    </p>
+
+    <div class="">
+      <input type="submit" value="Post comment">
+      <input type="button" value="Preview">
+      <a href="#">Cancel</a>
+    </div>
 
   </fieldset>
 
