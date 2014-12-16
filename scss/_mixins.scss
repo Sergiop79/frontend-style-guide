@@ -26,6 +26,8 @@
   &:hover,
   &:focus,
   &:active {
+    color: $color;
+    text-decoration: none;
     background-color: darken($background, 10%);
     border-color: darken($border, 12%);
   }
