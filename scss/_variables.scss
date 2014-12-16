@@ -61,22 +61,50 @@ $padding-horizontal : 12px;
 
 // Breakpoints ************************************************
 
-$bp-small: 48em; // 768px / 16px;
-$bp-medium: 62em; // 992px / 16px;
-$bp-large: 75em; // 1200px / 16px;
+$bp-small    : 48em; // 768px / 16px;
+$bp-medium   : 62em; // 992px / 16px;
+$bp-large    : 75em; // 1200px / 16px;
 
 // Textures ***************************************************
 
 // Colors of different states warning, success, info ...
 
-$success-color: #5cb85c;
-$info-color:  #5bc0de;
-$warning-color: #f0ad4e;
-$danger-color: #d9534f;
+$success-color  : #5cb85c;
+$info-color     : #5bc0de;
+$warning-color  : #f0ad4e;
+$danger-color   : #d9534f;
+
+// Buttons ****************************************************
+
+$btn-font-weight: normal;
+
+$btn-default-color    : #333;
+$btn-default-bg       : $white;
+$btn-default-border   : #ccc;
+
+$btn-primary-color    : $white;
+$btn-primary-bg       : $brand-color;
+$btn-primary-border   : darken($btn-primary-bg, 5%);
+
+$btn-success-color    : $white;
+$btn-success-bg       : $success-color;
+$btn-success-border   : darken($btn-success-bg, 5%);
+
+$btn-info-color    : $white;
+$btn-info-bg       : $info-color;
+$btn-info-border   : darken($btn-info-bg, 5%);
+
+$btn-warning-color    : $white;
+$btn-warning-bg       : $warning-color;
+$btn-warning-border   : darken($btn-warning-bg, 5%);
+
+$btn-danger-color    : $white;
+$btn-danger-bg       : $danger-color;
+$btn-danger-border   : darken($btn-danger-bg, 5%);
 
 // Forms ******************************************************
-$input-bg: #fff;
-$input-focus-shadow: 0 0 6px rgba($brand-color, .3);
-$input-border-color: #ccc;
-$input-focus-border-color: lighten($brand-color, 20%);
-$input-padding: 6px 12px;
+$input-bg                  : #fff;
+$input-focus-shadow        : 0 0 6px rgba($brand-color, .3);
+$input-border-color        : #ccc;
+$input-focus-border-color  : lighten($brand-color, 20%);
+$input-padding             : 6px 12px;

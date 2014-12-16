@@ -8,3 +8,25 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// Buttons
+
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  @include font-size($font-size);
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+  }
+}
