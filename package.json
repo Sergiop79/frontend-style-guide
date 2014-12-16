@@ -1,7 +1,7 @@
 {
-  "name": "frontend-styleguide",
+  "name": "frontend-style-guide",
   "version": "0.0.1",
-  "description": "Frontend styleguide",
+  "description": "Frontend style guide for personal use",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
