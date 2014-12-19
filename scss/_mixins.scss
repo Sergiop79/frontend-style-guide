@@ -9,7 +9,24 @@
   margin-right: auto;
 }
 
-// Buttons
+// Buttons: we can create different variants of buttons with
+// these mixins
+
+
+@mixin btn {
+  @include button-size($padding-vertical, $padding-horizontal, 16, $baseline-height, $radius);
+
+  font-family: $base-font;
+  display: inline-block;
+  margin: $margin-base 0;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
 
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
   padding: $padding-vertical $padding-horizontal;
@@ -18,7 +35,26 @@
   border-radius: $border-radius;
 }
 
-@mixin button-variant($color, $background, $border) {
+@mixin button-variant($color, $background, $border, $disabled: false) {
+
+  @if $disabled == true {
+    cursor: not-allowed;
+    opacity: 0.6;
+
+    &:hover {
+      background-color: $background;
+      border-color: $border;
+    }
+
+  } @else {
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($background, 10%);
+      border-color: darken($border, 12%);
+    }
+  }
+
   color: $color;
   background-color: $background;
   border-color: $border;
@@ -32,7 +68,5 @@
   &:active {
     color: $color;
     text-decoration: none;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 12%);
   }
 }

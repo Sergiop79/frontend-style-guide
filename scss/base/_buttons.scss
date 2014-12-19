@@ -1,44 +1,64 @@
-// Basic button style
-
-%btn {
-  @include button-size($padding-vertical, $padding-horizontal, 16, $baseline-height, $radius);
-  font-family: $base-font;
-  display: inline-block;
-  font-weight: $btn-font-weight;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-}
-
-
 // Button variants
 
   .btn--default {
-    @extend %btn;
+    @include btn;
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
   }
 
   .btn--primary {
-    @extend %btn;
+    @include btn;
     @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
   }
 
   .btn--success {
-    @extend %btn;
+    @include btn;
     @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
   }
 
+  .btn--info {
+    @include btn;
+    @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  }
+
   .btn--warning {
-    @extend %btn;
+    @include btn;
     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
   }
 
   .btn--danger {
-    @extend %btn;
+    @include btn;
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
   }
+
+// Disabled buttons
+
+.btn--default--disabled {
+  @include btn;
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border, $disabled: true);
+}
+
+.btn--primary--disabled {
+  @include btn;
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $disabled: true);
+}
+
+.btn--success--disabled {
+  @include btn;
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $disabled: true);
+}
+
+.btn--info--disabled {
+  @include btn;
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border, $disabled: true);
+}
+
+.btn--warning--disabled {
+  @include btn;
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border, $disabled: true);
+}
+
+.btn--danger--disabled {
+  @include btn;
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border, $disabled: true);
+}
 
