@@ -3,19 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Style guide</title>
-
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style guide</title>
+  <link rel="stylesheet" href="css/style.min.css">
 
   <body>
-
-    {{> header}}
-
     <main class="main" role="main">
+      <a href="#menu" class="btn--default">Menu</a>
+      <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
+
+      {{> header}}
+
+      <h2 id="grouping-content">Headings</h2>
       {{> headings}}
 
-      <h2>Grouping content</h2>
+      <h2 id="grouping-content">Grouping content</h2>
       {{> paragraphs}}
       {{> horizontal}}
       {{> preformatted}}
@@ -25,7 +28,7 @@
 
       <hr>
 
-      <h2>Text-level Semantics</h2>
+      <h2 id="text-level">Text-level Semantics</h2>
       {{> links}}
       {{> emphasis}}
       {{> small}}
@@ -46,19 +49,23 @@
 
       <hr>
 
-      <h2>Tabular data</h2>
+      <h2 id="tables">Tabular data</h2>
       {{> tables}}
 
       <hr>
 
-      <h2>Forms</h2>
+      <h2 id="forms">Forms</h2>
       {{> forms}}
 
       <hr>
 
-      <h2>Buttons</h2>
+      <h2 id="buttons">Buttons</h2>
       {{> buttons}}
+
+      <hr>
     </main>
+
+    {{> nav-menu}}
 
   </body>
 

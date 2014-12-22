@@ -1,0 +1,8 @@
+.main {
+  @include max-width;
+  width: 90%;
+}
+
+[role="navigation"] {
+  @extend .main;
+}

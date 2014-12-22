@@ -30,35 +30,8 @@
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
   }
 
-// Disabled buttons
-
-.btn--default--disabled {
-  @include btn;
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border, $disabled: true);
-}
-
-.btn--primary--disabled {
-  @include btn;
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $disabled: true);
-}
-
-.btn--success--disabled {
-  @include btn;
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $disabled: true);
-}
-
-.btn--info--disabled {
-  @include btn;
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border, $disabled: true);
-}
-
-.btn--warning--disabled {
-  @include btn;
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border, $disabled: true);
-}
-
-.btn--danger--disabled {
-  @include btn;
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border, $disabled: true);
+.btn--disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 

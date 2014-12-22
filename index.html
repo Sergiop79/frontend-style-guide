@@ -3,22 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Style guide</title>
-
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style guide</title>
+  <link rel="stylesheet" href="css/style.min.css">
 
   <body>
-
-    <a href="https://github.com/sergiop79/frontend-style-guide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-    
-    <header class="header">
-      <h1>Style Guide</h1>
-      <p class="lean">Basic markup and typographic styles</p>
-    </header>
-
     <main class="main" role="main">
-      <h2>Headings</h2>
+      <a href="#menu" class="btn--default">Menu</a>
+      <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
+
+      <header class="header">
+        <h1>Frontend Style Guide</h1>
+        <h2>Basic markup and typographic styles</h2>
+      </header>
+
+      <h2 id="grouping-content">Headings</h2>
       
       <h1>Heading level 1 <a href="#">Linked</a> <code>h1</code> <small>small text</small></h1>
       <h2>Heading level 2 <a href="#">Linked</a> <code>h2</code> <small>small text</small></h2>
@@ -27,14 +27,14 @@
       <h5>Heading level 5 <a href="#">Linked</a> <code>h5</code> <small>small text</small></h5>
       <h6>Heading level 6 <a href="#">Linked</a> <code>h6</code> <small>small text</small></h6>
 
-      <h2>Grouping content</h2>
-      <h3>Paragraphs <code>p</code></h3>
+      <h2 id="grouping-content">Grouping content</h2>
+      <h3 id="paragraphs">Paragraphs <code>p</code></h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem aliquid itaque id possimus iste perferendis assumenda officiis magnam? Minus explicabo esse voluptate laboriosam nostrum eligendi inventore consequuntur blanditiis laborum eius.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae soluta, delectus. Quaerat, vitae eligendi facere beatae praesentium distinctio. Necessitatibus deleniti molestiae laborum quae iste ab sapiente quam, dolores aliquid ratione?</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sint in explicabo commodi nesciunt necessitatibus iste sed est quasi consectetur tempora asperiores, assumenda, quisquam minus consequuntur hic enim, sapiente voluptatem.</p>
-      <h3>Horizontal rule <code>hr</code></h3>
+      <h3 id="horizontal">Horizontal rule <code>hr</code></h3>
       <hr>
-      <h3>Pre-formatted text <code>pre</code> <code>samp</code></h3>
+      <h3 id="preformatted">Pre-formatted text <code>pre</code> <code>samp</code></h3>
       <pre>
             <samp>! " # $ % &amp; ' ( ) * + , - . /
                 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
@@ -43,11 +43,11 @@
                 ` a b c d e f g h i j k l m n o
                 p q r s t u v w x y z { | } ~</samp>
       </pre>
-      <h3>Blockquotes <code>blockquote</code></h3>
+      <h3 id="blockquotes">Blockquotes <code>blockquote</code></h3>
       <blockquote cite="http://developer.mozilla.org">
         <p>This is a quotation taken from the Mozilla Developer Center. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
       </blockquote>
-      <h3>Ordered list <code>ol li</code></h3>
+      <h3 id="lists">Ordered list <code>ol li</code></h3>
       <ol>
         <li>Ordered item 01</li>
         <li>
@@ -93,7 +93,7 @@
         <dt>Internet Explorer</dt>
         <dd>A graphical web browsers developed by Microsoft and included as part of the Microsoft Windows line of operating systems, starting in 1995</dd>
       </dl>
-      <h3>Figures <code>figure figcaption</code></h3>
+      <h3 id="figures">Figures <code>figure figcaption</code></h3>
       <figure>
         <img src="http://lorempixel.com/640/480/nature/10" alt="abstract image">
         <figcaption>This is a caption text of the image</figcaption>
@@ -101,37 +101,37 @@
 
       <hr>
 
-      <h2>Text-level Semantics</h2>
-      <h3>Links <code>a</code></h3>
+      <h2 id="text-level">Text-level Semantics</h2>
+      <h3 id="links">Links <code>a</code></h3>
       <p><a href="#">Go to Homepage</a> or <a href="http://google.com">Go to Google</a>
       </p>
-      <h3>Emphasis <code>em</code></h3>
+      <h3 id="emphasis">Emphasis <code>em</code></h3>
       <p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipisicing.</p>
-      <h3>Small <code>small</code></h3>
+      <h3 id="small">Small <code>small</code></h3>
       <p>
         <small>Copyright © 1922-2011 Acme Corporation. All Rights Reserved.</small>
       </p>
       
-      <h3>Strikethrough <code>s</code></h3>
+      <h3 id="strikethrough">Strikethrough <code>s</code></h3>
       <p>
         <s>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</s>
       </p>
-      <h3>Citations <code>cite</code></h3>
+      <h3 id="citations">Citations <code>cite</code></h3>
       <p>
         <cite>Universal Declaration of Human Rights</cite>, United Nations, December 1948. Adopted by General Assembly resolution 217 A (III).
       </p>
-      <h3>Inline quotes <code>q</code></h3>
+      <h3 id="inline-quotes">Inline quotes <code>q</code></h3>
       <p>John said, <q>I saw Lucy at lunch time</q>
       </p>
-      <h3>Definition <code>dfn</code></h3>
+      <h3 id="definition">Definition <code>dfn</code></h3>
       <p>
         Bob’s <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.
       </p>
-      <h3>Abbreviation <code>abbr</code></h3>
+      <h3 id="abbreviation">Abbreviation <code>abbr</code></h3>
       <p>
         <abbr title="British Broadcasting Corportation">BBC</abbr>, <abbr title="HyperText Markup Language">HTML</abbr>, and <abbr title="Staffordshire">Staffs.</abbr>
       </p>
-      <h3>Code <code>code</code></h3>
+      <h3 id="code">Code <code>code</code></h3>
       <p>When you <code>activate()</code> method on the <code>robotSnowman</code> object, the eyes glow</p>
       
       <p>Used in conjunction with the pre element:</p>
@@ -141,17 +141,17 @@
                     }
               </code>
       </pre>
-      <h3>Variable <code>var</code></h3>
+      <h3 id="variable">Variable <code>var</code></h3>
       <p>If there are <var>n</var> pipes leading to the ice cream factory then I expect at <em>least</em>  <var>n</var> flavours of ice cream to be available for purchase!</p>
-      <h3>Sample output <code>samp</code></h3>
+      <h3 id="sample">Sample output <code>samp</code></h3>
       <p>
         The computer said <samp>Too much cheese in tray two</samp> but I didn’t know what that meant.
       </p>
-      <h3>Keyboard entry <code>kbd</code></h3>
+      <h3 id="keyboard">Keyboard entry <code>kbd</code></h3>
       <p>
         To reboot your computer press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Supr</kbd>.
       </p>
-      <h3>Superscript <code>sup</code> and Subscript <code>sub</code></h3>
+      <h3 id="sup-sub">Superscript <code>sup</code> and Subscript <code>sub</code></h3>
       <p>The coordinate of the <var>i</var>th point is (<var>x<sub><var>i</var>
         </sub>
         </var>, <var>y<sub><var>i</var>
@@ -161,11 +161,11 @@
       <p>
         f(<var>x</var>, <var>n</var>) = log<sub>4</sub>  <var>x</var><sup><var>n</var></sup>
       </p>
-      <h3>Italicised <code>i</code></h3>
+      <h3 id="italicised">Italicised <code>i</code></h3>
       <p>There is a certain <i>je ne sais quoi</i> in the air</p>
-      <h3>Emboldened <code>b</code></h3>
+      <h3 id="emboldened">Emboldened <code>b</code></h3>
       <p>You enter a small room. Your <b>sword</b> glows brighter. A <b>rat</b> scurries past the corner wall.</p>
-      <h3>Marked or highlighted text <code>mark</code></h3>
+      <h3 id="mark">Marked or highlighted text <code>mark</code></h3>
       <p>
         I also have some <mark>kitten</mark>s who are visiting me these days. They’re really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.
       </p>
@@ -176,7 +176,7 @@
 
       <hr>
 
-      <h2>Tabular data</h2>
+      <h2 id="tables">Tabular data</h2>
        <table>
         <thead>
           <tr>
@@ -238,7 +238,7 @@
 
       <hr>
 
-      <h2>Forms</h2>
+      <h2 id="forms">Forms</h2>
       <form action="">
         <fieldset>
           <legend class="legend">Legend Personal information</legend>
@@ -354,7 +354,7 @@
 
       <hr>
 
-      <h2>Buttons</h2>
+      <h2 id="buttons">Buttons</h2>
       <h4>Button variants</h4>
        <p>
         <input type="submit" class="btn--default" value="Default">
@@ -367,12 +367,12 @@
       
       <h4>Disabled buttons</h4>
        <p>
-        <input type="submit" class="btn--default--disabled" value="Default" disabled>
-        <input type="submit" class="btn--primary--disabled" value="Primary" disabled>
-        <input type="submit" class="btn--success--disabled" value="Success" disabled>
-        <input type="submit" class="btn--info--disabled" value="info" disabled>
-        <input type="submit" class="btn--warning--disabled" value="Warning" disabled>
-        <input type="submit" class="btn--danger--disabled" value="Danger" disabled>
+        <input type="submit" class="btn--default btn--disabled" value="Default" disabled>
+        <input type="submit" class="btn--primary btn--disabled" value="Primary" disabled>
+        <input type="submit" class="btn--success btn--disabled" value="Success" disabled>
+        <input type="submit" class="btn--info btn--disabled" value="info" disabled>
+        <input type="submit" class="btn--warning btn--disabled" value="Warning" disabled>
+        <input type="submit" class="btn--danger btn--disabled" value="Danger" disabled>
        </p>
       
       
@@ -382,7 +382,54 @@
         <input type="submit" class="btn--default" value="Submit input">
         <button class="btn--default">Button</button>
       </div>
+
+      <hr>
     </main>
+
+    <nav id="menu"  class="menu" role="navigation">
+      <a href="#top" class="btn--default">Close</a>
+      <ul>
+        <li><a href="#headings">Headings</a>
+        </li>
+        <li><a href="#grouping-content">Grouping content</a>
+          <ul>
+            <li><a href="#paragraphs">Paragraphs</a></li>
+            <li><a href="#horizontal">Horizontal Rule</a></li>
+            <li><a href="#preformatted">Pre-formatted text</a></li>
+            <li><a href="#blockquotes">Blockquotes</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#figures">Figures</a></li>
+          </ul>
+        </li>
+        <li><a href="#text-level">Text-level Semantics</a>
+          <ul>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#emphasis">Emphasis</a></li>
+            <li><a href="#small">Small</a></li>
+            <li><a href="#strikethrough">Strikethrough</a></li>
+            <li><a href="#citations">Citations</a></li>
+            <li><a href="#inline-quotes">Inline quotes</a></li>
+            <li><a href="#definition">Definition</a></li>
+            <li><a href="#abbreviation">Abbreviation</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#variable">Variable</a></li>
+            <li><a href="#sample">Sample</a></li>
+            <li><a href="#keyboard">Keyboard</a></li>
+            <li><a href="#sup-sub">Sup Sub</a></li>
+            <li><a href="#italicised">Italicised</a></li>
+            <li><a href="#emboldened">Emboldened</a></li>
+            <li><a href="#mark">Mark</a></li>
+            <li><a href="#edits">Edits</a></li>
+          </ul>
+        </li>
+        <li><a href="#tables">Tabular Data</a>
+        </li>
+        <li><a href="#forms">Forms</a>
+        </li>
+        <li><a href="#buttons">Buttons</a>
+        </li>
+      </ul>
+    </nav>
 
   </body>
 
