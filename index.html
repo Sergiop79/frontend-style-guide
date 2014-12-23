@@ -20,7 +20,7 @@
         <h2>Basic markup and typographic styles</h2>
       </header>
 
-      <h2 id="grouping-content">Headings</h2>
+      <h2 id="headings" class="h--bordered">Headings</h2>
       
       <h1>Heading level 1 <a href="#">Linked</a> <code>h1</code> <small>small text</small></h1>
       <h2>Heading level 2 <a href="#">Linked</a> <code>h2</code> <small>small text</small></h2>
@@ -29,7 +29,7 @@
       <h5>Heading level 5 <a href="#">Linked</a> <code>h5</code> <small>small text</small></h5>
       <h6>Heading level 6 <a href="#">Linked</a> <code>h6</code> <small>small text</small></h6>
 
-      <h2 id="grouping-content">Grouping content</h2>
+      <h2 id="grouping-content" class="h--bordered">Grouping content</h2>
       <h3 id="paragraphs">Paragraphs <code>p</code></h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem aliquid itaque id possimus iste perferendis assumenda officiis magnam? Minus explicabo esse voluptate laboriosam nostrum eligendi inventore consequuntur blanditiis laborum eius.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae soluta, delectus. Quaerat, vitae eligendi facere beatae praesentium distinctio. Necessitatibus deleniti molestiae laborum quae iste ab sapiente quam, dolores aliquid ratione?</p>
@@ -103,7 +103,7 @@
 
       <hr>
 
-      <h2 id="text-level">Text-level Semantics</h2>
+      <h2 id="text-level" class="h--bordered">Text-level Semantics</h2>
       <h3 id="links">Links <code>a</code></h3>
       <p><a href="#">Go to Homepage</a> or <a href="http://google.com">Go to Google</a>
       </p>
@@ -178,7 +178,7 @@
 
       <hr>
 
-      <h2 id="tables">Tabular data</h2>
+      <h2 id="tables" class="h--bordered">Tabular data</h2>
        <table>
         <thead>
           <tr>
@@ -240,7 +240,7 @@
 
       <hr>
 
-      <h2 id="forms">Forms</h2>
+      <h2 id="forms" class="h--bordered">Forms</h2>
       <form action="">
         <fieldset>
           <legend class="legend">Legend Personal information</legend>
@@ -356,7 +356,7 @@
 
       <hr>
 
-      <h2 id="buttons">Buttons</h2>
+      <h2 id="buttons" class="h--bordered">Buttons</h2>
       <h4>Button variants</h4>
        <p>
         <input type="submit" class="btn--default" value="Default">
@@ -390,48 +390,50 @@
 
     <nav id="menu"  class="menu" role="navigation">
       <a href="#top" class="btn--default">Close</a>
-      <ul>
-        <li><a href="#headings">Headings</a>
+      <ul class="menu-list">
+        <li class="menu-list__item"><a href="#headings">Headings</a>
         </li>
-        <li><a href="#grouping-content">Grouping content</a>
-          <ul>
-            <li><a href="#paragraphs">Paragraphs</a></li>
-            <li><a href="#horizontal">Horizontal Rule</a></li>
-            <li><a href="#preformatted">Pre-formatted text</a></li>
-            <li><a href="#blockquotes">Blockquotes</a></li>
-            <li><a href="#lists">Lists</a></li>
-            <li><a href="#figures">Figures</a></li>
+        <li class="menu-list__item menu__dropdown"><a href="#grouping-content" data-toggle="dropdown">Grouping content <i class="icon-arrow close"></i></a>
+          <ul class="menu-sublist hide">
+            <li  class="menu-sublist__item"><a href="#paragraphs">Paragraphs</a></li>
+            <li class="menu-sublist__item"><a href="#horizontal">Horizontal Rule</a></li>
+            <li class="menu-sublist__item"><a href="#preformatted">Pre-formatted text</a></li>
+            <li class="menu-sublist__item"><a href="#blockquotes">Blockquotes</a></li>
+            <li class="menu-sublist__item"><a href="#lists">Lists</a></li>
+            <li class="menu-sublist__item"><a href="#figures">Figures</a></li>
           </ul>
         </li>
-        <li><a href="#text-level">Text-level Semantics</a>
-          <ul>
-            <li><a href="#links">Links</a></li>
-            <li><a href="#emphasis">Emphasis</a></li>
-            <li><a href="#small">Small</a></li>
-            <li><a href="#strikethrough">Strikethrough</a></li>
-            <li><a href="#citations">Citations</a></li>
-            <li><a href="#inline-quotes">Inline quotes</a></li>
-            <li><a href="#definition">Definition</a></li>
-            <li><a href="#abbreviation">Abbreviation</a></li>
-            <li><a href="#code">Code</a></li>
-            <li><a href="#variable">Variable</a></li>
-            <li><a href="#sample">Sample</a></li>
-            <li><a href="#keyboard">Keyboard</a></li>
-            <li><a href="#sup-sub">Sup Sub</a></li>
-            <li><a href="#italicised">Italicised</a></li>
-            <li><a href="#emboldened">Emboldened</a></li>
-            <li><a href="#mark">Mark</a></li>
-            <li><a href="#edits">Edits</a></li>
+        <li class="menu-list__item menu__dropdown"><a href="#text-level" data-toggle="dropdown">Text-level Semantics <i class="icon-arrow close"></i></a>
+          <ul class="menu-sublist hide">
+            <li class="menu-sublist__item"><a href="#links">Links</a></li>
+            <li class="menu-sublist__item"><a href="#emphasis">Emphasis</a></li>
+            <li class="menu-sublist__item"><a href="#small">Small</a></li>
+            <li class="menu-sublist__item"><a href="#strikethrough">Strikethrough</a></li>
+            <li class="menu-sublist__item"><a href="#citations">Citations</a></li>
+            <li class="menu-sublist__item"><a href="#inline-quotes">Inline quotes</a></li>
+            <li class="menu-sublist__item"><a href="#definition">Definition</a></li>
+            <li class="menu-sublist__item"><a href="#abbreviation">Abbreviation</a></li>
+            <li class="menu-sublist__item"><a href="#code">Code</a></li>
+            <li class="menu-sublist__item"><a href="#variable">Variable</a></li>
+            <li class="menu-sublist__item"><a href="#sample">Sample</a></li>
+            <li class="menu-sublist__item"><a href="#keyboard">Keyboard</a></li>
+            <li class="menu-sublist__item"><a href="#sup-sub">Sup Sub</a></li>
+            <li class="menu-sublist__item"><a href="#italicised">Italicised</a></li>
+            <li class="menu-sublist__item"><a href="#emboldened">Emboldened</a></li>
+            <li class="menu-sublist__item"><a href="#mark">Mark</a></li>
+            <li class="menu-sublist__item"><a href="#edits">Edits</a></li>
           </ul>
         </li>
-        <li><a href="#tables">Tabular Data</a>
+        <li class="menu-list__item"><a href="#tables">Tabular Data</a>
         </li>
-        <li><a href="#forms">Forms</a>
+        <li class="menu-list__item"><a href="#forms">Forms</a>
         </li>
-        <li><a href="#buttons">Buttons</a>
+        <li class="menu-list__item"><a href="#buttons">Buttons</a>
         </li>
       </ul>
     </nav>
+
+    <script src="js/nav-menu.js"></script>
 
   </body>
 

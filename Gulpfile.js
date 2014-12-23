@@ -59,6 +59,14 @@ gulp.task('html', function () {
     }));
 });
 
+// main.js live reload
+gulp.task('js', function () {
+  gulp.src('./js/main.js')
+    .pipe(livereload({
+      auto: false
+    }));
+});
+
 
 // Server for development
 gulp.task('server', function () {
@@ -83,6 +91,7 @@ gulp.task('watch', function () {
   livereload.listen();
   gulp.watch(['./scss/**/*.scss'], ['styles']);
   gulp.watch(['./index.html'], ['html']);
+  gulp.watch(['./js/**/*.js'], ['js']);
   gulp.watch(['./templates/**/*.handlebars'], ['templates']);
 });
 

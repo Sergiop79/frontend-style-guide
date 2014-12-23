@@ -3,10 +3,6 @@
   width: 90%;
 }
 
-[role="navigation"] {
-  @extend .main;
-}
-
 .header {
   width: 85%
 }
@@ -15,3 +11,7 @@
       width: 100%;
     }
   }
+
+.h--bordered {
+  border-bottom: solid 1px $lightergrey;
+}

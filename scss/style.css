@@ -565,21 +565,93 @@ body {
   color: #262626; }
 
 /* line 1, /home/sergio/sandbox/front-end-styleguide/scss/layout/styleguide.scss */
-.main, [role="navigation"] {
+.main {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
   width: 90%; }
 
-/* line 10, /home/sergio/sandbox/front-end-styleguide/scss/layout/styleguide.scss */
+/* line 6, /home/sergio/sandbox/front-end-styleguide/scss/layout/styleguide.scss */
 .header {
   width: 85%; }
 
 @media all and (min-width: 22.8em) {
-  /* line 14, /home/sergio/sandbox/front-end-styleguide/scss/layout/styleguide.scss */
+  /* line 10, /home/sergio/sandbox/front-end-styleguide/scss/layout/styleguide.scss */
   .header {
     width: 100%; }
  }
+
+/* line 15, /home/sergio/sandbox/front-end-styleguide/scss/layout/styleguide.scss */
+.h--bordered {
+  border-bottom: solid 1px #e6e6e6; }
+
+/* line 1, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.menu {
+  height: 100vh;
+  width: 75%;
+  padding-left: 6px;
+  background-color: black;
+  padding: 0;
+  /*position: fixed;
+  top: 0;
+  left: 0;*/ }
+
+/* line 12, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.menu__dropdown {
+  position: relative; }
+
+/* line 16, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.menu-list {
+  margin-top: 6px;
+  padding: 0;
+  background-color: #0f213d;
+  width: 100%; }
+
+/* line 23, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.menu-list__item {
+  border-bottom: solid 2px white;
+  line-height: 2.25em; }
+  /* line 30, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+  .menu-list__item a, .menu-list__item a:active, .menu-list__item a:focus, .menu-list__item a:hover, .menu-list__item a:visited {
+    display: block;
+    padding: 0 0 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+
+/* line 39, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.menu-list__item:first-child {
+  border-top: solid 2px white; }
+
+/* line 43, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.menu-sublist {
+  border-top: solid 1px white; }
+  /* line 46, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+  .menu-sublist.hide {
+    display: none; }
+  /* line 50, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+  .menu-sublist.show {
+    display: block; }
+
+/* line 56, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+.icon-arrow {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 10px; }
+  /* line 62, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+  .icon-arrow.open {
+    transform: rotate(-180deg);
+    transition: all 0.5s ease-out; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+  .icon-arrow.close {
+    transform: rotate(0deg);
+    transition: all 0.5s ease-out; }
+  /* line 72, /home/sergio/sandbox/front-end-styleguide/scss/layout/nav-menu.scss */
+  .icon-arrow:before {
+    font-size: 18px;
+    font-size: 1.125rem;
+    content: "\25BC"; }
 
 /* line 1, /home/sergio/sandbox/front-end-styleguide/scss/components/forkme.scss */
 .fork-me {
