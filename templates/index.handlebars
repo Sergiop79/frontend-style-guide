@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 
   <body>
-    <main class="main" role="main">
-      <a href="#menu" class="btn--default">Menu</a>
-      <div class="fork-me fork-me--top-right">
-        <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
-      </div>
+    <div class="fork-me fork-me--top-right">
+      <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
+    </div>
+    <main class="main hidden" role="main">
+      <a href="#menu" id="menu-open" class="btn--default menu-control">Menu</a>
 
       {{> header}}
 

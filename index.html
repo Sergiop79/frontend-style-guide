@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 
   <body>
-    <main class="main" role="main">
-      <a href="#menu" class="btn--default">Menu</a>
-      <div class="fork-me fork-me--top-right">
-        <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
-      </div>
+    <div class="fork-me fork-me--top-right">
+      <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
+    </div>
+    <main class="main hidden" role="main">
+      <a href="#menu" id="menu-open" class="btn--default menu-control">Menu</a>
 
       <header class="header">
         <h1>Frontend Style Guide</h1>
@@ -171,7 +171,7 @@
       <p>
         I also have some <mark>kitten</mark>s who are visiting me these days. They’re really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.
       </p>
-      <h3>Edits <code>del ins</code></h3>
+      <h3 id="edits">Edits <code>del ins</code></h3>
       <p>
         She bought <del datetime="2005-05-30T13:00:00">two</del>  <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.
       </p>
@@ -388,8 +388,8 @@
       <hr>
     </main>
 
-    <nav id="menu"  class="menu" role="navigation">
-      <a href="#top" class="btn--default">Close</a>
+    <nav id="menu"  class="menu hidden" role="navigation">
+      <a href="#top" id="menu-close" class="btn--default menu-control">Close</a>
       <ul class="menu-list">
         <li class="menu-list__item"><a href="#headings">Headings</a>
         </li>

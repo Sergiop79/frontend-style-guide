@@ -1,7 +1,15 @@
 .main {
   @include max-width;
   width: 90%;
+  z-index: 2;
 }
+  @media all and (min-width: $bp-medium) {
+    .main {
+    width:70%;
+    margin-left: 22%;
+    }
+  }
+
 
 .header {
   width: 85%
@@ -11,7 +19,3 @@
       width: 100%;
     }
   }
-
-.h--bordered {
-  border-bottom: solid 1px $lightergrey;
-}

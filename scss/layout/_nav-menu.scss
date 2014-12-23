@@ -4,9 +4,16 @@
   padding-left: $padding-horizontal / 2;
   background-color: black;
   padding: 0;
-  /*position: fixed;
+  position: fixed;
   top: 0;
-  left: 0;*/
+  left: 0;
+  z-index: 3;
+  transition: all $animation-time / 2 ease;
+
+  &.hidden {
+    left: -75%;
+
+  }
 }
 
   .menu__dropdown {
@@ -44,12 +51,16 @@
     border-top: solid 1px white;
 
     &.hide {
-      display: none;
+     display: none;
     }
 
     &.show {
       display: block;
     }
+  }
+
+  .menu-sublist__item {
+    list-style: none;
   }
 
 
@@ -74,3 +85,17 @@
       content: "\25BC";
     }
   }
+
+  @media all and (min-width: $bp-medium) {
+    .menu-control {
+      display: none;
+    }
+
+    .menu,
+    .menu.hidden {
+      // On medium screens we show the menu
+        width:20%;
+        left: 0;
+    }
+  }
+

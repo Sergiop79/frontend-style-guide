@@ -250,3 +250,8 @@ sup {
 sub {
   vertical-align: sub;
 }
+
+// Headings with border bottom
+.h--bordered {
+  border-bottom: solid 1px $lightergrey;
+}

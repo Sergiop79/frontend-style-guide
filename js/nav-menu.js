@@ -1,22 +1,35 @@
 (function () {
   'use strict';
+  var dropDowns = document.querySelectorAll('.menu__dropdown');
+  var aDropDowns = Array.prototype.slice.call(dropDowns, 0);
+  var menu = document.getElementById('menu');
+  var menuClose = document.getElementById('menu-close');
+  var menuOpen = document.getElementById('menu-open');
 
   function hasClass(el, name) {
     return new RegExp('(\\s|^)' + name + '(\\s|$)').test(el.className);
   }
 
+  function toggleMenu (event) {
+    if (!hasClass(menu, 'hidden')) {
+      menu.classList.add('hidden');
+      event.preventDefault();
+    } else {
+      menu.classList.remove('hidden');
+    }
+  }
 
-  var dropDowns = document.querySelectorAll('.menu__dropdown');
-  var aDropDowns = Array.prototype.slice.call(dropDowns, 0);
+  // Toggle the navigation menu
+  menuClose.onclick = toggleMenu;
+  menuOpen.onclick = toggleMenu;
 
+  // Navigation tree
   aDropDowns.forEach(function (element) {
     var button = element.querySelector('a[data-toggle="dropdown"]');
-    console.log(button);
 
     var menu = element.querySelector('.menu-sublist');
 
     var arrow = element.querySelector('i.icon-arrow');
-    console.dir(menu);
 
     button.onclick = function (event) {
       if (!hasClass(menu, 'show')) {
