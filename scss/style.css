@@ -105,7 +105,7 @@ li ul, li ol {
 hr {
   clear: both;
   display: block;
-  margin: 3em 0;
+  margin: 1.875em 0;
   padding: 0;
   height: 1px;
   border: 0;
@@ -715,5 +715,152 @@ body {
   right: -48px;
   transform: rotate(45deg);
   z-index: 99999; }
+
+/* line 1, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 8, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--1 {
+  background-color: #52BAD5;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--1:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$base-color"; }
+  @media all and (min-width: 48em) {
+    .color--1 {
+      width: 175px;
+      height: 100px; } }
+
+/* line 12, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--2 {
+  background-color: #7bcadf;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--2:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$base-color-light"; }
+  @media all and (min-width: 48em) {
+    .color--2 {
+      width: 175px;
+      height: 100px; } }
+
+/* line 16, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--3 {
+  background-color: #f16c3d;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--3:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$secondary-color"; }
+  @media all and (min-width: 48em) {
+    .color--3 {
+      width: 175px;
+      height: 100px; } }
+
+/* line 20, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--4 {
+  background-color: #5cb85c;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--4:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$success-color"; }
+  @media all and (min-width: 48em) {
+    .color--4 {
+      width: 175px;
+      height: 100px; } }
+
+/* line 24, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--5 {
+  background-color: #5bc0de;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--5:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$info-color"; }
+  @media all and (min-width: 48em) {
+    .color--5 {
+      width: 175px;
+      height: 100px; } }
+
+/* line 28, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--6 {
+  background-color: #f0ad4e;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--6:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$warning-color"; }
+  @media all and (min-width: 48em) {
+    .color--6 {
+      width: 175px;
+      height: 100px; } }
+
+/* line 32, /home/sergio/sandbox/front-end-styleguide/scss/components/colors.scss */
+.color--7 {
+  background-color: #d9534f;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  padding: 10px;
+  margin: 0.75em 1%; }
+  /* line 67, /home/sergio/sandbox/front-end-styleguide/scss/mixins.scss */
+  .color--7:before {
+    font-size: 16px;
+    font-size: 1rem;
+    content: "$danger-color"; }
+  @media all and (min-width: 48em) {
+    .color--7 {
+      width: 175px;
+      height: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

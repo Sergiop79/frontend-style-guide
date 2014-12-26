@@ -1,0 +1,36 @@
+.color-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .color--1 {
+    @include color-swatch($base-color, '$base-color');
+  }
+
+  .color--2 {
+    @include color-swatch($base-color-light, '$base-color-light');
+  }
+
+  .color--3 {
+    @include color-swatch($secondary-color, '$secondary-color');
+  }
+
+  .color--4 {
+    @include color-swatch($success-color, '$success-color');
+  }
+
+  .color--5 {
+    @include color-swatch($info-color, '$info-color');
+  }
+
+  .color--6 {
+    @include color-swatch($warning-color, '$warning-color');
+  }
+
+  .color--7 {
+    @include color-swatch($danger-color, '$danger-color');
+  }
+
+

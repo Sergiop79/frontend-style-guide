@@ -52,3 +52,27 @@
     outline-color: $brand-color;
   }
 }
+
+// mixin for color swatch we are going to use flexbox
+
+@mixin color-swatch($color, $color-variable-name, $text-color: white) {
+  background-color: $color;
+  color: $text-color;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  border: solid 1px $border-color;
+  padding: 10px;
+  margin: $baseline / 2 1%;
+  &:before {
+    @include font-size();
+    content: "#{$color-variable-name}";
+  }
+
+  @media all and (min-width: $bp-small) {
+    width: 175px;
+    height: 100px;
+  }
+}
+
+
