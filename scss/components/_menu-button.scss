@@ -1,0 +1,12 @@
+#menu-open {
+  position: fixed;
+  top: $margin-base;
+  left: $margin-base;
+  box-shadow: 0 0 5px $base-color;
+}
+
+#menu-close {
+  position: absolute;
+  right: $margin-base;
+  bottom: $margin-base;
+}

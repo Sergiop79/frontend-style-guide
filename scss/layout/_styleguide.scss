@@ -12,6 +12,7 @@
 
 
 .header {
+  margin-top: $margin-base * 10;
   width: 85%
 }
   @media all and (min-width: 22.8em) { // 366px / 16px ~= 22.8em
