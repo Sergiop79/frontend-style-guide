@@ -1,3 +1,19 @@
+// Put a margin top on anchors with id
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+
+  @media all and (min-width: $bp-medium) {
+    *[id]:before {
+      display: none;
+    }
+  }
+
+
 .main {
   @include max-width;
   width: 90%;
@@ -18,5 +34,11 @@
   @media all and (min-width: 22.8em) { // 366px / 16px ~= 22.8em
     .header {
       width: 100%;
+    }
+  }
+
+  @media all and (min-width: $bp-medium) {
+    .header {
+      margin-top: $margin-base;
     }
   }
