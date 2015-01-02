@@ -31,6 +31,7 @@
 
     var arrow = element.querySelector('i.icon-arrow');
 
+
     button.onclick = function (event) {
       if (!hasClass(menu, 'show')) {
         menu.classList.add('show');

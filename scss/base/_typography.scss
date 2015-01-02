@@ -255,3 +255,8 @@ sub {
 .h--bordered {
   border-bottom: solid 1px $lightergrey;
 }
+
+// Some typography styles
+.lead {
+  @include font-size(18);
+}
