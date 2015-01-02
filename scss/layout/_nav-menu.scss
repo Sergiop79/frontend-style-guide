@@ -65,9 +65,11 @@
 
 
   .icon-arrow {
+    @extend .icon-arrow-down;
+    @include font-size(30);
     position: absolute;
     display: block;
-    top:0;
+    top:2px;
     right:10px;
 
     &.open {
@@ -80,10 +82,10 @@
       transition: all 0.5s ease-out;
     }
 
-    &:before {
+    /*&:before {
       @include font-size(18);
       content: "\25BC";
-    }
+    }*/
   }
 
   @media all and (min-width: $bp-medium) {

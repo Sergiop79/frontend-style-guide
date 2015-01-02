@@ -1,4 +1,5 @@
 #menu-open {
+  @include font-size(20);
   position: fixed;
   top: $margin-base;
   left: $margin-base;
