@@ -1,28 +1,23 @@
 .snippet {
-  margin-top: $margin-base;
+  margin-top: $margin-base * 4;
   position: relative;
-  background-color: $lightergrey;
-  display: block;
-  padding: $padding-vertical $padding-horizontal $padding-vertical / 2 $padding-horizontal;
+  section {
+    padding: 1.5%;
+    overflow: hidden;
+    background-color: $lightergrey;
+  }
 }
+  .snippet + hr {
+    margin-top: $margin-base * 10;
+  }
+
   .snippet__summary {
-    @include font-size(32);
+    @include font-size(14);
     font-weight: bold;
-    display: block;
-    width: 40px;
-    height: 32px;
-    text-align: center;
-    background: $lightergrey;
-    border-top-left-radius: $radius;
-    border: 0;
     outline: none;
-    cursor: pointer;
-    position: absolute;
-    top: -1em;
-    right: 0;
-    &::-webkit-details-marker {
+    /*&::-webkit-details-marker {
       display: none;
-    }
+    }*/
   }
 
   .snippet__text {
@@ -40,6 +35,3 @@
     }
   }
 
-  @media all and (min-width: $bp-medium) {
-
-  }

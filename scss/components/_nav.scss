@@ -1,0 +1,33 @@
+.nav {
+  display: block;
+  margin-bottom: $margin-base;
+}
+  .nav__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__item {
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid $lightgrey;
+    line-height: $baseline * 1.5;
+    padding-left: $padding-horizontal;
+    padding-right: $padding-horizontal;
+    transition: all ease $hover-transition;
+
+    &:hover {
+      background: $superlightergrey;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    a,
+    a:hover,
+    a:active {
+      color: $link-color;
+      text-decoration: none;
+    }
+  }

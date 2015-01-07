@@ -1,6 +1,6 @@
 .fork-me {
   padding: 4px 0;
-  width: 200px;
+  width: 250px;
   height: auto;
   display: inline-block;
   overflow: auto;
@@ -26,8 +26,8 @@
 }
     .fork-me--top-right {
       position: fixed;
-      top: 39px;
-      right: -48px;
+      top: 40px;
+      right: -70px;
       transform: rotate(45deg);
       z-index: 99999;
     }

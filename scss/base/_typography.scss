@@ -260,3 +260,7 @@ sub {
 .lead {
   @include font-size(18);
 }
+
+.caption {
+  @extend figcaption;
+}

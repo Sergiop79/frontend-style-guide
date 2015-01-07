@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 
   <body>
+   <div class="fork-me--wrap">
     <div class="fork-me fork-me--top-right">
       <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
     </div>
+   </div>
     <main class="main hidden" role="main">
       <a href="#menu" id="menu-open" class="btn--info menu-control"><span class="icon-menu"></span></a>
 
@@ -407,15 +409,53 @@
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repudiandae, excepturi possimus. Incidunt aperiam possimus reiciendis dignissimos consectetur repellat temporibus ex culpa! Laborum tempore, perspiciatis corporis iste aspernatur consectetur accusantium.</p>
       
       <details class="snippet">
-          <summary title="Show markup usage" class="snippet__summary">...</summary>
-      
-          <textarea class="text-input snippet__text" cols="30" rows="10"><p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repudiandae, excepturi possimus. Incidunt aperiam possimus reiciendis dignissimos consectetur repellat temporibus ex culpa! Laborum tempore, perspiciatis corporis iste aspernatur consectetur accusantium.</p></textarea>
-          <p class="caption snippet__caption">
-            <strong>Usage:</strong> Content preceding the main body of a page or article, giving the reader the main idea of the following content.
-          </p>
+          <summary title="Show markup usage" class="snippet__summary">Snippet</summary>
+          <section>
+            <textarea class="text-input snippet__text" cols="30" rows="10"><p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repudiandae, excepturi possimus. Incidunt aperiam possimus reiciendis dignissimos consectetur repellat temporibus ex culpa! Laborum tempore, perspiciatis corporis iste aspernatur consectetur accusantium.</p></textarea>
+            <p class="caption snippet__caption">
+              <strong>Usage:</strong> Content preceding the main body of a page or article, giving the reader the main idea of the following content.
+            </p>
+          </section>
       </details>
-
       <hr>
+      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquid!</p>
+      
+      <details class="snippet">
+          <summary title="Show markup usage" class="snippet__summary">Snippet</summary>
+          <section>
+            <textarea class="text-input snippet__text" cols="30" rows="10"><p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquid!</p></textarea>
+            <p class="caption snippet__caption">
+              <strong>Usage:</strong> Short text describing some content.
+            </p>
+          </section>
+      </details>
+      <hr>
+      <nav role="navigation" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Lorem link</a></li>
+          <li class="nav__item"><a href="#">Ipsum link</a></li>
+          <li class="nav__item"><a href="#">Dolor link</a></li>
+        </ul>
+      </nav>
+      
+      <details class="snippet">
+          <summary title="Show markup usage" class="snippet__summary">Snippet</summary>
+          <section>
+            <textarea class="text-input snippet__text" cols="30" rows="10">
+      <nav role="navigation" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Lorem link</a></li>
+          <li class="nav__item"><a href="#">Ipsum link</a></li>
+          <li class="nav__item"><a href="#">Dolor link</a></li>
+        </ul>
+      </nav></textarea>
+            <p class="caption snippet__caption">
+              <strong>Usage:</strong> Content preceding the main body of a page or article, giving the reader the main idea of the following content.
+            </p>
+          </section>
+      </details>
+      <hr>
+
     </main>
 
     <nav id="menu"  class="menu hidden" role="navigation">

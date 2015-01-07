@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 
   <body>
+   <div class="fork-me--wrap">
     <div class="fork-me fork-me--top-right">
       <a href="https://github.com/Sergiop79/frontend-style-guide">Fork me on Github</a>
     </div>
+   </div>
     <main class="main hidden" role="main">
       <a href="#menu" id="menu-open" class="btn--info menu-control"><span class="icon-menu"></span></a>
 
@@ -76,8 +78,12 @@
       <p class="lead">Common snippets of makup</p>
       <hr>
       {{> lead}}
-
       <hr>
+      {{> caption}}
+      <hr>
+      {{> nav}}
+      <hr>
+
     </main>
 
     {{> nav-menu}}
