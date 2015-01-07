@@ -1,0 +1,51 @@
+.vertical-nav {
+}
+  .vertical-nav__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: $baseline * 2;
+
+    a {
+      display: block;
+    }
+
+    a,
+    a:hover,
+    a:active {
+      padding-left: 1em;
+      text-decoration: none;
+      color: $link-color;
+    }
+
+    a:hover {
+      background: $superlightergrey;
+    }
+  }
+
+  .vertical-nav__item {
+    @include font-size;
+    list-style: none;
+    border-bottom: 1px solid $lightgrey;
+  }
+
+  .vertical-nav__item--active {
+    position: relative;
+    font-weight: bold;
+    a {
+      background-color: $lightergrey;
+    }
+
+    &:after {
+      position: absolute;
+      top:0;
+      left: 100%;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 1.5em solid transparent;
+      border-left: 1em solid $lightergrey;
+      border-bottom: 1.5em solid transparent;
+    }
+  }
