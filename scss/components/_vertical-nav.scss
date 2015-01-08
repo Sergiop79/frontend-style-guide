@@ -11,7 +11,8 @@
       display: block;
     }
 
-    a, a:hover, a:active {
+    a, a:hover,
+    a:active {
       padding-left: 1em;
       text-decoration: none;
       color: $link-color;
@@ -33,6 +34,11 @@
     font-weight: bold;
     a {
       background-color: $lightergrey;
+    }
+
+    a, a:hover
+    a:active {
+      color: $black !important;
     }
 
     &:after {
