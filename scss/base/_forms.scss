@@ -77,8 +77,7 @@
       line-height: 1em;
     }
 
-.text-input + .caption,
-.select-input + .caption,
+.text-input + .caption, .select-input + .caption,
 .option + .caption,
 .option__label + .caption {
   display: block;

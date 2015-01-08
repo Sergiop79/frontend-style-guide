@@ -27,8 +27,7 @@
       transition: all ease $hover-transition;
     }
 
-    a,
-    a:hover,
+    a, a:hover,
     a:active {
       color: $link-color;
       text-decoration: none;

@@ -2,11 +2,7 @@
 
 // Headings
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1, h2, h3, h4, h5,
 h6 {
   margin: 0;
   font-family: $heading-font;
@@ -15,54 +11,56 @@ h6 {
   text-rendering : optimizelegibility;
 }
 
-h1 small,
-h2 small,
-h3 small {
+h1 small, h2 small, h3 small {
   font-weight: normal;
   display: block;
   color: $grey;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   margin-bottom: $baseline-height / 2;
   @include font-size(32);
   line-height: 1.2;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   margin-bottom: $baseline-height / 3;
   @include font-size(24);
   line-height: 1.2;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   margin-bottom: $baseline-height / 4;
   @include font-size(21);
   line-height: 1.3;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   margin-bottom: $baseline-height / 6;
   @include font-size(18);
   line-height: 1.25;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   margin-bottom: $baseline-height / 6;
   @include font-size(16);
   line-height: 1;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   margin-bottom: $baseline-height / 2;
   @include font-size(14);
   line-height: 1;
 }
 
 
-p,
-ul,
-ol,
+p, ul, ol,
 dl {
   margin-bottom: $baseline-height;
   line-height: $baseline-height;
@@ -113,9 +111,7 @@ blockquote {
   }
 }
 
-blockquote p::before,
-blockquote p::after,
-q:before,
+blockquote p::before, blockquote p::after, q:before,
 q:after {
   content: "";
 }
@@ -178,7 +174,8 @@ cite {
   font-style: normal;
 }
 
-i, em, dfn {
+i, em,
+dfn {
   font-style: italic;
 }
 
@@ -216,9 +213,7 @@ code {
   color: $code-color;
 }
 
-pre,
-code,
-kbd,
+pre, code, kbd,
 samp {
   font-family: $code-font;
   @include font-size(14);

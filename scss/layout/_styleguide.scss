@@ -1,7 +1,7 @@
 // Put a margin top on anchors with id
 *[id]:before {
   display: block;
-  content: " ";
+  content: ' ';
   margin-top: -75px;
   height: 75px;
   visibility: hidden;

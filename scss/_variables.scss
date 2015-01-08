@@ -26,11 +26,11 @@ $text-color-strong  : $black;
 
 // Typography *************************************************
 
-$fonts-dir             : "../fonts";
+$fonts-dir             : '../fonts';
 //$base-font             : "Helvetica neue", Helvetica, Arial, sans-serif;
-$base-font             : "open_sansregular", Helvetica, Arial, sans-serif;
-$alt-font              : Georgia, Times, "Times New Roman";
-$code-font             : "Courier New", monospace;
+$base-font             : 'open_sansregular', Helvetica, Arial, sans-serif;
+$alt-font              : Georgia, Times, 'Times New Roman';
+$code-font             : 'Courier New', monospace;
 $code-color            : #c7254e;
 $heading-font          : inherit;
 $heading-font-weight   : bold;

@@ -44,8 +44,7 @@
     color: $color;
   }
 
-  &:hover,
-  &:focus,
+  &:hover, &:focus,
   &:active {
     color: $color;
     text-decoration: none;
@@ -66,7 +65,7 @@
   margin: $baseline / 2 1%;
   &:before {
     @include font-size();
-    content: "#{$color-variable-name}";
+    content: '#{$color-variable-name}';
   }
 
   @media all and (min-width: $bp-small) {

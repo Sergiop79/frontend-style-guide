@@ -11,9 +11,7 @@
       display: block;
     }
 
-    a,
-    a:hover,
-    a:active {
+    a, a:hover, a:active {
       padding-left: 1em;
       text-decoration: none;
       color: $link-color;
@@ -41,7 +39,7 @@
       position: absolute;
       top:0;
       left: 100%;
-      content: "";
+      content: '';
       width: 0;
       height: 0;
       border-top: 1.5em solid transparent;
