@@ -1,0 +1,18 @@
+.breadcrumb {
+  @include font-size(14);
+
+  a {
+    margin-right: 0.25em;
+    text-decoration: none;
+  }
+
+  a:after {
+    content: ' /';
+    font-weight: 700;
+    color: $grey;
+  }
+
+  strong {
+    @include font-size(14);
+  }
+}

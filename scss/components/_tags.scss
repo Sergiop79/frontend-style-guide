@@ -1,0 +1,38 @@
+.tags {
+  margin: 0;
+  padding: 0;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  & [data-rank="1"] {
+    @include font-size(12);
+  }
+
+  & [data-rank="2"] {
+    @include font-size(14);
+  }
+
+  & [data-rank="3"] {
+    @include font-size(16);
+  }
+
+  & [data-rank="4"] {
+    @include font-size(18);
+  }
+
+  & [data-rank="5"] {
+    @include font-size(20);
+  }
+
+  & [data-rank="6"] {
+    @include font-size(22);
+  }
+
+}

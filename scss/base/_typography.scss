@@ -66,9 +66,6 @@ dl {
   line-height: $baseline-height;
 }
 
-li {
-  list-style-type: square;
-}
 
 ul,
 ol {
@@ -76,12 +73,17 @@ ol {
   padding: 0 0 0 $gutter-width;
 }
 
+ol li {
+  list-style-type: decimal;
+}
+
+ul li {
+  list-style-type: square;
+}
+
 li ul,
 li ol {
   margin: 0;
-  & li{
-    list-style-type: circle;
-  }
 }
 
 
