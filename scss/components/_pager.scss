@@ -1,0 +1,35 @@
+.pager {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  li {
+    width: 50%;
+    list-style: none;
+  }
+
+  li:first-child {
+    text-align: left;
+  }
+  li:last-child {
+    text-align: right;
+  }
+}
+
+  .pager__item {
+    @include btn;
+    border: 1px solid $lightgrey;
+    &:hover {
+      text-decoration: none;
+      background-color: $lightergrey;
+    }
+
+    &.prev:before {
+      content: '<< ';
+    }
+
+    &.next:after {
+      content: ' >>';
+    }
+  }
+
