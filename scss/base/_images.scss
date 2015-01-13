@@ -2,6 +2,21 @@ img {
   max-width: 100%;
 }
 
-.article__image {
+.img--article {
   width: 200px;
+}
+
+.img--framed {
+  border: 1px solid $lightgrey;
+  padding: 0.25em;
+  box-shadow: 0 0 2px $lightergrey;
+}
+
+.img--circle { // The image must have width and height with the same measure.
+  border-radius: 50%;
+}
+
+.img--circle,
+.img--framed {
+  display: block;
 }
