@@ -1,12 +1,14 @@
-.media {
-  display: flex;
-  align-items: flex-start;
+@media all and (min-width: 320px) {
+  .media {
+    display: flex;
+    align-items: flex-start;
+  }
+
+    .media__figure {
+      margin-right: 1em;
+    }
+
+    .media__body {
+      flex: 1;
+    }
 }
-
-  .media__figure {
-    margin-right: 1em;
-  }
-
-  .media__body {
-    flex: 1;
-  }

@@ -205,14 +205,21 @@ mark {
   color: $text-color;
 }
 
-pre {
-  white-space: pre;
+/*
+code, kbd,
+samp {
   white-space: pre-wrap;
-  word-wrap: break-word;
 }
+*/
 
 code {
   color: $code-color;
+}
+
+pre {
+  samp {
+  background-color: $superlightergrey;
+  }
 }
 
 pre, code, kbd,
